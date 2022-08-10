@@ -1,5 +1,5 @@
-# 03-Slider
+# 03 | Slider
 
-*Slider*
+**Slider**
 
-(Project)[]
+[Open Source](https://xzalexzx.github.io/03-Slider/)
