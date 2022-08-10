@@ -1,5 +1,5 @@
 # 03-Slider
 
-**Slider**
+*Slider*
 
 (Project)[]
