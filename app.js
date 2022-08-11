@@ -35,6 +35,8 @@ function changeSlides(direction) {
   mainSlide.style.transform = `translateY(-${activeSlideIndex * height}px`;
 
   sidebar.style.transform = `translateY(${activeSlideIndex * height}px`;
+
+  // console.log(activeSlideIndex * height);
 }
 
 document.onkeydown = key;
@@ -47,3 +49,16 @@ function key(e) {
     changeSlides('down');
   }
 }
+
+function wheelHandler(event) {
+  const e = event || window.event;
+  const dy = e.wheelDeltaY || e.deltaY;
+  // console.log(dy);
+  if (dy < 0) {
+    changeSlides('down');
+  } else if (dy > 0) {
+    changeSlides('up');
+  }
+}
+
+window.addEventListener('wheel', wheelHandler);
